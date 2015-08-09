@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".TransactionListActivity"
+            android:label="@string/title_transaction_list" >
+        </activity>
+        <activity
+            android:name=".TransactionDetailActivity"
+            android:label="@string/title_transaction_detail"
+            android:parentActivityName=".TransactionListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="uk.co.retout.apps.canispendit.TransactionListActivity" />
+        </activity>
     </application>
 
 </manifest>
